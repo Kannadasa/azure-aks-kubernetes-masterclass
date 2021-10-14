@@ -25,27 +25,26 @@ terraform {
       version = "~> 3.0"
     }
   }
-
-# Terraform State Storage to Azure Storage Container
   backend "azurerm" {
     resource_group_name   = "terraform-storage-rg"
-    storage_account_name  = "terraformstatexlrwdrzs"
-    container_name        = "tfstatefiles"
+    storage_account_name  = "terraformkanna"
+    container_name        = "tfstate"
     key                   = "dev.terraform.tfstate"
-  }  
+  }
+
+
+  
 }
 
-
-
-# 2. Terraform Provider Block for AzureRM
 provider "azurerm" {
   features {
-
+    
   }
 }
 
-# 3. Terraform Resource Block: Define a Random Pet Resource
-resource "random_pet" "aksrandom" {
 
+resource "random_pet" "aksrandom" {
+  
+  
 }
 

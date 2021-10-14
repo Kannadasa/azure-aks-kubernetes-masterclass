@@ -3,14 +3,20 @@
 # 2. Resource Group Id
 # 3. Resource Group Name
 
+
 output "location" {
-  value = azurerm_resource_group.aks_rg.location
+  value = azurerm_resource_group.aksrg.location
+
 }
 
 output "resource_group_id" {
-  value = azurerm_resource_group.aks_rg.id
+
+  value = azurerm_resource_group.aksrg.id
+
 }
 
 output "resource_group_name" {
-  value = azurerm_resource_group.aks_rg.name
+
+  value = azurerm_resource_group.aksrg.name
+
 }
